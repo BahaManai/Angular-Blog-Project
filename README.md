@@ -1,27 +1,12 @@
-# MyAngularBlog
+# Angular-Blog-Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+Ce projet est un blog personnel développé avec Angular, qui permet à l'utilisateur de publier et de gérer des articles. L'application offre une interface conviviale et responsive, avec des fonctionnalités de filtrage et de tri pour naviguer facilement à travers les articles.
 
-## Development server
+Fonctionnalités principales :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Ajout d'Articles : Les utilisateurs peuvent ajouter des articles en fournissant un titre, une date de création, une URL d'image et une description.
+- Affichage des Articles : Les articles sont affichés sous forme de cartes, comprenant le titre, la date de publication, l'image et la description, avec un score pour chaque article.
+- Filtrage des Articles : Une barre de recherche permet de filtrer les articles par titre, en affichant uniquement ceux qui commencent par la valeur saisie.
+- Interactivité : Les utilisateurs peuvent augmenter ou diminuer le score des articles, permettant ainsi une interaction dynamique avec le contenu.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Ce projet est une excellente occasion de mettre en pratique les compétences en développement web, tout en offrant une plateforme pour partager des idées et des réflexions.
