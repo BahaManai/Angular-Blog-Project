@@ -1,0 +1,32 @@
+<!--Afficher seulement les articles filtrés-->
+@for (article of filteredArticles(); track $index) {
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-2">
+                <img [src]="article.url" alt="Image de l'article" width="200px" />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <p class="card-subtitle text-muted">{{ article.dateDePub }}</p>
+                    <p class="card-text text-justify">{{ article.description }}</p>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-3">
+                <p class="fw-bold mb-2 score">{{ article.score }}<img src="https://png.pngtree.com/png-clipart/20230330/original/pngtree-shiny-yellow-star-icon-clipart-png-image_9011244.png" alt="Star" width="30" class="ms-1" /></p>
+                <button class="btn-article btn btn-success mb-2" (click)="moveUp($index)">Up</button> 
+                <button class="btn-article btn btn-danger" (click)="moveDown($index)">Down</button>
+            </div>
+        </div>
+    </div>
+}
+
+<br>
+<button class="btn btn-primary mb-3" (click)="changeAction('add')">Ajouter un article</button>
+
+@if (action === "add"){
+    <app-article-add [lastId]="Articles[Articles.length -1].id"
+    (articleCreated)="addArticle($event)"
+    ></app-article-add>
+}
+

@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+    color: #00796b; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.container {
+    background-color: #dbf4dd; 
+}

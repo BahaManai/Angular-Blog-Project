@@ -1,0 +1,21 @@
+<h2>Ajouter un article :</h2><br>
+<form id="addForm">
+    <div class="mb-3">
+      <label for="title" class="form-label">Titre</label>
+      <input type="text" class="form-control" id="title" #title/>
+    </div>
+    <div class="mb-3">
+      <label for="dateDeCreation" class="form-label">Date de création</label>
+      <input type="date" class="form-control" id="dateDeCreation" #dateDeCreation/>
+    </div>
+    <div class="mb-3">
+      <label for="url" class="form-label">URL de l'image</label>
+      <input type="url" class="form-control" id="url" #url/>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" #description rows="3"></textarea>
+    </div>
+    <button type="button" id="btnValidAdd" class="btn btn-success" (click)="addArticle(title.value, dateDeCreation.value, url.value, description.value)">Valider</button>
+</form>
+<br>
