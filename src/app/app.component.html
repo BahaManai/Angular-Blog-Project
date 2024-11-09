@@ -2,11 +2,5 @@
   <br>
   <h1>Baha Manai's Angular Blog</h1>
   <br>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Rechercher un article..."
-      (input)="ModifierSearchValue($event)"
-    />
-  </div>
-  <!--Envoyer la valeur saisie à app-articles-list pour filter avec cette valeur les articles-->
-  <app-articles-list [SearchValue]="searchValue"></app-articles-list>
+  <app-articles-list></app-articles-list>
 </div>

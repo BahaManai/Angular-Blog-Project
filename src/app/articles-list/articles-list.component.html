@@ -1,3 +1,4 @@
+<app-search (recherche)="getSearch($event)"></app-search>
 <!--Afficher seulement les articles filtrés-->
 @for (article of filteredArticles(); track $index) {
     <div class="card mb-3">
